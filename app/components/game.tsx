@@ -13,8 +13,8 @@ export default function BrickSlider() {
     naturalWidth: 0,
     naturalHeight: 0,
   });
-  const [gridSize, setGridSize] = useState(2);
-  const [gridClass, setGridClass] = useState("grid-cols-2");
+  const [gridSize, setGridSize] = useState(3);
+  const [gridClass, setGridClass] = useState("grid-cols-3");
   const [grid, setGrid] = useState<number[][]>([]);
   const [winConditionMet, setWinConditionMet] = useState(false);
 
