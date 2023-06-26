@@ -120,7 +120,7 @@ export default function BrickSlider() {
 
   return (
     <div className=" h-full max-h-full m-2 rounded-lg">
-      <div className="text-2xl text-center font-mono py-3">
+      <div className="text-2xl text-center font-mono py-3 border-0">
         Sliding Tile Puzzle Game
       </div>
       <div className="py-4">
@@ -129,7 +129,7 @@ export default function BrickSlider() {
             {grid?.map((row, rowIndex) =>
               row.map((tile, colIndex) => (
                 <div
-                  className={`shrink max-w-12 border-blue-300 border-${
+                  className={`shrink max-w-12 border-blue-400 border-${
                     winConditionMet ? 0 : 2
                   }`}
                   key={`${rowIndex}${colIndex}`}
